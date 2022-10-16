@@ -1,0 +1,391 @@
+
+/* Normalize */
+
+:root {
+    /* Colors */
+    --primary: #060317;
+    --secondary: #ef7213;
+    --alternative: #302F4D;
+    --text-color: #2B2B2B;
+
+    /* Spacings */
+    --spacing-large: 6rem;
+    --spacing-medium: 2.4rem;
+    --spacing-small: 2rem;
+    --spacing-xsmall: 1rem;
+
+    /* Font-family */
+    --font-principal: 'Barlow', sans-serif;
+    --font-title: 'Roboto Slab', serif;
+
+    /* Font-Sizes */
+    --text-large: 5.2em;
+    --text-medium: 2.2em;
+    --text-base: 1.6em;
+    --text-small: 1.4em;
+
+    
+}
+*::after,
+*::before,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*header*/
+
+
+header{
+    width: 100%;
+     position: fixed;
+    z-index: 100;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+
+nav ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+nav a {
+    display: block;
+    padding: 1em;
+    color:rgb(255, 255, 255)C;
+    text-decoration: none;
+    color: #dadce2;
+}
+
+nav ul li ul {
+    display: none;
+}
+nav ul li a:hover + ul, nav ul li ul:hover {
+    display: flex;
+    flex-direction: column;
+    color: #dadce2;
+}
+.cat a:hover{
+    color: #dadce2;
+}
+
+a {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(222, 116, 11);
+    }
+    a:before,
+    a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: rgb(222, 116, 11);
+    transition: left .8s;
+    }
+    a:hover:before {
+    left: 0;
+    }
+    a:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: rgb(222, 116, 11);
+    transition: right .8s;
+    }
+    a:hover:after {
+    right: 0;
+    }
+
+button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(222, 116, 11);
+    }
+    button:before,
+    button:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: rgb(222, 116, 11);
+    transition: left .8s;
+    }
+    button:hover:before {
+    left: 0;
+    }
+    button:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: -100%;
+    background: rgb(222, 116, 11);
+    transition: right .8s;
+    }
+    button:hover:after {
+    right: 0;
+    }
+
+/* ---- Main ----*/
+/*section title*/
+main{
+    
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#section_h1{    
+    height: 80vh;
+    background-image: url("/sources/logo3.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section_h1 h1{
+    
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+#main_h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.main_p{
+    width: 70%;
+    text-align: center;      
+    color: white;       
+    font-size: 1.2vw;
+    margin-bottom: 5%;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*CLOTHES*/
+#clothes_h1{
+    height: 80vh;
+    background-image: url("https://images.unsplash.com/photo-1614990354198-b06764dcb13c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8dmludGFnZSUyMHNob3B8ZW58MHx8MHx8&w=1000&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#clothes_h1 h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*ELECTRONICS*/
+#electronics_h1{
+    height: 80vh;
+    background-image: url("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2021/05/realme-watch-2-pro-2342091.jpg?itok=mu2GbslA");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#electronics_h1 h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*FURNITURES*/
+#fornitures_h1{
+    height: 80vh;
+    background-image: url("https://www.korestudios.com/wp-content/uploads/ASTAIRE-Cam-12-00582_T.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#fornitures_h1 h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*SHOES*/
+#shoes_h1{
+    height: 80vh;
+    background-image: url("https://wallpaperaccess.com/full/1076764.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#shoes_h1 h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*OTHERS*/
+#others_h1{
+    height: 80vh;
+    background-image: url("https://i0.wp.com/gradeboosterspr.com/wp-content/uploads/2020/08/Back-to-School.jpg?fit=1100723&ssl=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#others_h1 h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+/*BUSQUEDA*/
+#busqueda_h1{
+    height: 80vh;
+    background-image: url("https://cdn.dribbble.com/users/117798/screenshots/2091036/open-uri20150603-11-1ko5ldq");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#busqueda_h1 h1{
+    text-align: center;      
+    color: white;
+    padding: 4vw;
+    font-size: 6vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.buscadorProductos{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#textoBuscar{
+    width: 300%;
+    margin-left: -100%;
+}
+#botonBuscar{
+    margin-bottom: 20%;
+}
+/* section productos y cards*/
+#section_productos{
+    background-image: url("https://p4.wallpaperbetter.com/wallpaper/204/996/971/wall-light-bricks-pattern-wallpaper-preview.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos_sub{
+    text-align: center;      
+    color: #ffffff;
+    padding: 4vw;
+    font-size: 3vw;
+    font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2vw; 
+}
+.productos-h4{
+    text-align: center;      
+    color: #ffffff;
+    padding: 1.5vw;
+    font-size: 1.5vw;
+    text-shadow: black 0.1em 0.1em 0.2em;    
+}
+
+/*SECTION SUCURSALES*/
+#sucursales{
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.espacio_carrito{
+    padding: 30%;
+}
+
+/*FOOOTER*/
+
+
+  
